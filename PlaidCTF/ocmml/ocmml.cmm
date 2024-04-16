@@ -1,0 +1,692 @@
+
+cmm:
+(data)
+(data
+ int 4087
+ "camlOcmml.36":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlOcmml.eq_276")
+(data
+ int 4087
+ "camlOcmml.35":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlOcmml.check'_285")
+(data
+ int 3063
+ "camlOcmml.34":
+ addr "camlOcmml.check_363"
+ int 72057594037927941)
+(data
+ int 4087
+ "camlOcmml.33":
+ addr "caml_curry3"
+ int 216172782113783815
+ addr "camlOcmml.parse'''_366")
+(data
+ int 4087
+ "camlOcmml.32":
+ addr "caml_curry2"
+ int 144115188075855879
+ addr "camlOcmml.parse''_439")
+(data
+ int 3063
+ "camlOcmml.31":
+ addr "camlOcmml.parse'_443"
+ int 72057594037927941)
+(data
+ int 3063
+ "camlOcmml.30":
+ addr "camlOcmml.parse_448"
+ int 72057594037927941)
+(data
+ int 3063
+ "camlOcmml.29":
+ addr "camlOcmml.fun_724"
+ int 72057594037927941)
+(data
+ int 9984
+ global "camlOcmml"
+ "camlOcmml":
+ int 1
+ int 1
+ int 1
+ int 1
+ int 1
+ int 1
+ int 1
+ int 1
+ int 1)
+(data
+ global "camlOcmml.gc_roots"
+ "camlOcmml.gc_roots":
+ addr "camlOcmml"
+ int 0)
+(function{ocmml.ml:14,11-172} camlOcmml.eq_276 (a/277: val b/278: val)
+ (catch
+   (let switcher/764 (load_mut unsigned int8 (+a a/277 -8))
+     (if switcher/764
+       (let switcher/763 (load_mut unsigned int8 (+a b/278 -8))
+         (if switcher/763
+           (catch
+             (if
+               (!=
+                 (app{ocmml.ml:17,42-51} "camlOcmml.eq_276"
+                   (load_mut val a/277) (load_mut val b/278) val)
+                 1)
+               (app{ocmml.ml:17,55-64} "camlOcmml.eq_276"
+                 (load_mut val (+a a/277 8)) (load_mut val (+a b/278 8)) val)
+               (exit 20))
+           with(20) 1) (exit 1)))
+       (let switcher/762 (load_mut unsigned int8 (+a b/278 -8))
+         (if switcher/762 (exit 1)
+           (+ (<< (== (load_mut val a/277) (load_mut val b/278)) 1) 1)))))
+ with(1) 1))
+
+(function{ocmml.ml:21,15-380} camlOcmml.check'_285
+     (input/286: val xs/287: val)
+ (let switcher/761 (load_mut unsigned int8 (+a input/286 -8))
+   (switch switcher/761 
+   case 0:
+     (let a/288 (load_mut val input/286)
+       (alloc{ocmml.ml:23,21-50} 2049 a/288
+         (app{ocmml.ml:23,31-49} "camlOcmml.check'_285"
+           (load_mut val (+a input/286 8))
+           (alloc{ocmml.ml:23,40-49} 2048 a/288 xs/287) val)))
+   case 1:
+     (let a/290 (load_mut val input/286)
+       (catch
+         (let switcher/760 (load_mut unsigned int8 (+a a/290 -8))
+           (if switcher/760 (exit 3)
+             (app{ocmml.ml:24,25-39} "camlStdlib.failwith_7" "camlOcmml.1"
+               val)))
+       with(3)
+         (let
+           (a'/293
+              (app{ocmml.ml:26,16-27} "camlOcmml.check'_285" a/290 xs/287
+                val)
+            b'/294
+              (app{ocmml.ml:27,15-26} "camlOcmml.check'_285"
+                (load_mut val (+a input/286 8)) xs/287 val)
+            switcher/759 (load_mut unsigned int8 (+a a'/293 -8)))
+           (if switcher/759
+             (if
+               (!=
+                 (app{ocmml.ml:29,31-40} "camlOcmml.eq_276"
+                   (load_mut val a'/293) b'/294 val)
+                 1)
+               (load_mut val (+a a'/293 8))
+               (app{ocmml.ml:29,55-69} "camlStdlib.failwith_7" "camlOcmml.1"
+                 val))
+             (app{ocmml.ml:30,13-27} "camlStdlib.failwith_7" "camlOcmml.1"
+               val)))))
+   case 2:
+     (app{ocmml.ml:31,15-28} "camlStdlib__List.nth_291" xs/287
+       (load_mut val input/286) val))))
+
+(function{ocmml.ml:32,10-33} camlOcmml.check_363 (input/365: val)
+ (app{ocmml.ml:32,18-33} "camlOcmml.check'_285" input/365 1 val))
+
+(function{ocmml.ml:46,17-222} camlOcmml.parse'''_366
+     (input/367: val i/368: val x/369: val)
+ (let
+   *match*/685
+     (+
+       (<<
+         (let index/757 (>>s i/368 1)
+           (checkbound{ocmml.ml:47,10-28}
+             (let
+               tmp/758 (- (<< (>>u (load_mut int (+a input/367 -8)) 10) 3) 1)
+               (- tmp/758 (load_mut unsigned int8 (+a input/367 tmp/758))))
+             index/757)
+           (load_mut unsigned int8 (+ input/367 index/757)))
+         1)
+       1)
+   (if (!= *match*/685 81)
+     (if (!= *match*/685 83)
+       (app{ocmml.ml:51,14-38} "camlOcmml.parse'''_366" input/367 (+ i/368 2)
+         x/369 val)
+       (if (!= x/369 1)
+         (app{ocmml.ml:49,16-46} "camlOcmml.parse'''_366" input/367
+           (+ i/368 2) (+ x/369 -2) val)
+         i/368))
+     (app{ocmml.ml:50,16-46} "camlOcmml.parse'''_366" input/367 (+ i/368 2)
+       (+ x/369 2) val))))
+
+(function{ocmml.ml:52,12-112} camlOcmml.parse''_439
+     (input/441: val i/442: val)
+ (if
+   (!=
+     (+
+       (<<
+         (let index/755 (>>s i/442 1)
+           (checkbound{ocmml.ml:53,7-27}
+             (let
+               tmp/756 (- (<< (>>u (load_mut int (+a input/441 -8)) 10) 3) 1)
+               (- tmp/756 (load_mut unsigned int8 (+a input/441 tmp/756))))
+             index/755)
+           (load_mut unsigned int8 (+ input/441 index/755)))
+         1)
+       1)
+     81)
+   (app{ocmml.ml:53,40-54} "camlStdlib.failwith_7" "camlOcmml.1" unit) 
+   [])
+ (app{ocmml.ml:54,4-28} "camlOcmml.parse'''_366" input/441 (+ i/442 2) 1 val))
+
+(function{ocmml.ml:56,15-514} camlOcmml.parse'_443 (input/444: val)
+ (let
+   *match*/686
+     (+
+       (<<
+         (seq
+           (checkbound{ocmml.ml:57,10-28}
+             (let
+               tmp/752 (- (<< (>>u (load_mut int (+a input/444 -8)) 10) 3) 1)
+               (- tmp/752 (load_mut unsigned int8 (+a input/444 tmp/752))))
+             0)
+           (load_mut unsigned int8 input/444))
+         1)
+       1)
+   (if (!= *match*/686 125)
+     (if (!= *match*/686 167)
+       (app{ocmml.ml:67,11-25} "camlStdlib.failwith_7" "camlOcmml.1" val)
+       (let
+         i/445
+           (app{ocmml.ml:59,16-31} "camlOcmml.parse''_439" input/444 3 val)
+         (if
+           (!= i/445
+             (+
+               (<<
+                 (let
+                   tmp/753
+                     (- (<< (>>u (load_mut int (+a input/444 -8)) 10) 3) 1)
+                   (- tmp/753
+                     (load_mut unsigned int8 (+a input/444 tmp/753))))
+                 1)
+               -1))
+           (app{ocmml.ml:60,47-61} "camlStdlib.failwith_7" "camlOcmml.1"
+             unit)
+           [])
+         (alloc{ocmml.ml:61,8-62} 1024
+           (extcall "caml_int_of_string"{ocmml.ml:61,18-62}
+             (let
+               (len/702 (+ i/445 -4)
+                prim/703
+                  (app{string.ml:43,2-23} "camlStdlib__Bytes.sub_304"
+                    input/444 5 len/702 val))
+               prim/703)
+             int->val))))
+     (let
+       (i/446
+          (app{ocmml.ml:63,16-31} "camlOcmml.parse''_439" input/444 3 val)
+        j/447
+          (app{ocmml.ml:64,16-37} "camlOcmml.parse''_439" input/444
+            (+ i/446 2) val))
+       (if
+         (!= j/447
+           (+
+             (<<
+               (let
+                 tmp/754
+                   (- (<< (>>u (load_mut int (+a input/444 -8)) 10) 3) 1)
+                 (- tmp/754 (load_mut unsigned int8 (+a input/444 tmp/754))))
+               1)
+             -1))
+         (app{ocmml.ml:65,47-61} "camlStdlib.failwith_7" "camlOcmml.1" unit)
+         [])
+       (alloc{ocmml.ml:66,8-100} 2049
+         (app{ocmml.ml:66,15-50} "camlOcmml.parse'_443"
+           (let
+             (len/704 (+ i/446 -4)
+              prim/705
+                (app{string.ml:43,2-23} "camlStdlib__Bytes.sub_304" input/444
+                  5 len/704 val))
+             prim/705)
+           val)
+         (app{ocmml.ml:66,52-99} "camlOcmml.parse'_443"
+           (let
+             (len/706 (+ (- j/447 i/446) -3) ofs/707 (+ i/446 4)
+              prim/708
+                (app{string.ml:43,2-23} "camlStdlib__Bytes.sub_304" input/444
+                  ofs/707 len/706 val))
+             prim/708)
+           val))))))
+
+(function{ocmml.ml:69,14-758} camlOcmml.parse_448 (input/449: val)
+ (let
+   *match*/687
+     (+
+       (<<
+         (seq
+           (checkbound{ocmml.ml:70,10-28}
+             (let
+               tmp/748 (- (<< (>>u (load_mut int (+a input/449 -8)) 10) 3) 1)
+               (- tmp/748 (load_mut unsigned int8 (+a input/449 tmp/748))))
+             0)
+           (load_mut unsigned int8 input/449))
+         1)
+       1)
+   (catch
+     (let switcher/688 (+ *match*/687 -130)
+       (if (<a 23 switcher/688) (exit 7)
+         (switch (>>s switcher/688 1) 
+         case 0:
+           (let
+             (i/452
+                (app{ocmml.ml:77,16-31} "camlOcmml.parse''_439" input/449 3
+                  val)
+              j/453
+                (app{ocmml.ml:78,16-37} "camlOcmml.parse''_439" input/449
+                  (+ i/452 2) val))
+             (if
+               (!= j/453
+                 (+
+                   (<<
+                     (let
+                       tmp/749
+                         (- (<< (>>u (load_mut int (+a input/449 -8)) 10) 3)
+                           1)
+                       (- tmp/749
+                         (load_mut unsigned int8 (+a input/449 tmp/749))))
+                     1)
+                   -1))
+               (app{ocmml.ml:79,47-61} "camlStdlib.failwith_7" "camlOcmml.1"
+                 unit)
+               [])
+             (alloc{ocmml.ml:80,8-96} 2049
+               (app{ocmml.ml:80,13-47} "camlOcmml.parse_448"
+                 (let
+                   (len/711 (+ i/452 -4)
+                    prim/712
+                      (app{string.ml:43,2-23} "camlStdlib__Bytes.sub_304"
+                        input/449 5 len/711 val))
+                   prim/712)
+                 val)
+               (app{ocmml.ml:80,49-95} "camlOcmml.parse_448"
+                 (let
+                   (len/713 (+ (- j/453 i/452) -3) ofs/714 (+ i/452 4)
+                    prim/715
+                      (app{string.ml:43,2-23} "camlStdlib__Bytes.sub_304"
+                        input/449 ofs/714 len/713 val))
+                   prim/715)
+                 val)))
+         case 1:case 2:case 3:case 4:case 5:case 6:case 7:case 9:case 10:
+           (exit 7)
+         case 8:
+           (let
+             i/454
+               (app{ocmml.ml:82,16-31} "camlOcmml.parse''_439" input/449 3
+                 val)
+             (if
+               (!= i/454
+                 (+
+                   (<<
+                     (let
+                       tmp/750
+                         (- (<< (>>u (load_mut int (+a input/449 -8)) 10) 3)
+                           1)
+                       (- tmp/750
+                         (load_mut unsigned int8 (+a input/449 tmp/750))))
+                     1)
+                   -1))
+               (app{ocmml.ml:83,47-61} "camlStdlib.failwith_7" "camlOcmml.1"
+                 unit)
+               [])
+             (alloc{ocmml.ml:84,8-58} 1026
+               (extcall "caml_int_of_string"{ocmml.ml:84,14-58}
+                 (let
+                   (len/716 (+ i/454 -4)
+                    prim/717
+                      (app{string.ml:43,2-23} "camlStdlib__Bytes.sub_304"
+                        input/449 5 len/716 val))
+                   prim/717)
+                 int->val)))
+         case 11:
+           (let
+             (i/450
+                (app{ocmml.ml:72,16-31} "camlOcmml.parse''_439" input/449 3
+                  val)
+              j/451
+                (app{ocmml.ml:73,16-37} "camlOcmml.parse''_439" input/449
+                  (+ i/450 2) val))
+             (if
+               (!= j/451
+                 (+
+                   (<<
+                     (let
+                       tmp/751
+                         (- (<< (>>u (load_mut int (+a input/449 -8)) 10) 3)
+                           1)
+                       (- tmp/751
+                         (load_mut unsigned int8 (+a input/449 tmp/751))))
+                     1)
+                   -1))
+               (app{ocmml.ml:74,47-61} "camlStdlib.failwith_7" "camlOcmml.1"
+                 unit)
+               [])
+             (alloc{ocmml.ml:75,8-100} 2048
+               (app{ocmml.ml:75,16-51} "camlOcmml.parse'_443"
+                 (let
+                   (len/718 (+ i/450 -4)
+                    prim/719
+                      (app{string.ml:43,2-23} "camlStdlib__Bytes.sub_304"
+                        input/449 5 len/718 val))
+                   prim/719)
+                 val)
+               (app{ocmml.ml:75,53-99} "camlOcmml.parse_448"
+                 (let
+                   (len/720 (+ (- j/451 i/450) -3) ofs/721 (+ i/450 4)
+                    prim/722
+                      (app{string.ml:43,2-23} "camlStdlib__Bytes.sub_304"
+                        input/449 ofs/721 len/720 val))
+                   prim/722)
+                 val))))))
+   with(7)
+     (app{ocmml.ml:85,11-25} "camlStdlib.failwith_7" "camlOcmml.1" val))))
+
+(function{ocmml.ml:102,54-66} camlOcmml.fun_724 (x/640: val) x/640)
+
+(data
+ int 2817
+ global "camlOcmml.9"
+ "camlOcmml.9":
+ addr "camlOcmml.2"
+ addr "camlOcmml.5")
+(data
+ int 2817
+ global "camlOcmml.8"
+ "camlOcmml.8":
+ addr "camlOcmml.3"
+ addr "camlOcmml.7")
+(data
+ int 2817
+ global "camlOcmml.7"
+ "camlOcmml.7":
+ addr "camlOcmml.5"
+ addr "camlOcmml.6")
+(data int 1792 global "camlOcmml.6" "camlOcmml.6": int 7)
+(data int 1792 global "camlOcmml.5" "camlOcmml.5": int 9)
+(data
+ int 2817
+ global "camlOcmml.4"
+ "camlOcmml.4":
+ addr "camlOcmml.2"
+ addr "camlOcmml.3")
+(data int 1792 global "camlOcmml.3" "camlOcmml.3": int 5)
+(data int 2044 "camlOcmml.28": string "Wrong." skip 1 byte 1)
+(data int 3068 "camlOcmml.27": string "Correct!" skip 7 byte 7)
+(data int 2816 "camlOcmml.26": addr "camlOcmml.24" addr "camlOcmml.25")
+(data int 2044 "camlOcmml.25": string " %s" skip 4 byte 4)
+(data int 2828 "camlOcmml.24": int 65 addr "camlOcmml.23")
+(data int 2818 "camlOcmml.23": int 1 int 1)
+(data int 3068 "camlOcmml.22": string "Enter input:" skip 3 byte 3)
+(data
+ int 8188
+ "camlOcmml.21":
+ string "Å£Cï9–´ùYõy	}Å)?òGKst6•Žº Ñ8,ñ˜'eSû°„ïñ³sè¥n£KmøÐ›"
+ skip 1
+ byte 1)
+(data
+ int 2817
+ global "camlOcmml.20"
+ "camlOcmml.20":
+ addr "camlOcmml.2"
+ addr "camlOcmml.19")
+(data int 1792 global "camlOcmml.2" "camlOcmml.2": int 3)
+(data
+ int 2817
+ global "camlOcmml.19"
+ "camlOcmml.19":
+ addr "camlOcmml.4"
+ addr "camlOcmml.18")
+(data
+ int 2817
+ global "camlOcmml.18"
+ "camlOcmml.18":
+ addr "camlOcmml.8"
+ addr "camlOcmml.17")
+(data
+ int 2817
+ global "camlOcmml.17"
+ "camlOcmml.17":
+ addr "camlOcmml.9"
+ addr "camlOcmml.16")
+(data
+ int 2817
+ global "camlOcmml.16"
+ "camlOcmml.16":
+ addr "camlOcmml.11"
+ addr "camlOcmml.15")
+(data
+ int 2817
+ global "camlOcmml.15"
+ "camlOcmml.15":
+ addr "camlOcmml.14"
+ addr "camlOcmml.12")
+(data
+ int 2817
+ global "camlOcmml.14"
+ "camlOcmml.14":
+ addr "camlOcmml.6"
+ addr "camlOcmml.13")
+(data
+ int 2817
+ global "camlOcmml.13"
+ "camlOcmml.13":
+ addr "camlOcmml.10"
+ addr "camlOcmml.12")
+(data int 1792 global "camlOcmml.12" "camlOcmml.12": int 13)
+(data
+ int 2817
+ global "camlOcmml.11"
+ "camlOcmml.11":
+ addr "camlOcmml.5"
+ addr "camlOcmml.10")
+(data int 1792 global "camlOcmml.10" "camlOcmml.10": int 11)
+(data int 2044 "camlOcmml.1": string "bad" skip 4 byte 4)
+(function camlOcmml.entry ()
+ (let clos/694 "camlOcmml.36"
+   (extcall "caml_initialize" "camlOcmml" clos/694 ->unit))
+ (let clos/696 "camlOcmml.35"
+   (extcall "caml_initialize" (+a "camlOcmml" 8) clos/696 ->unit))
+ (let check/363 "camlOcmml.34"
+   (extcall "caml_initialize" (+a "camlOcmml" 16) check/363 ->unit))
+ (let clos/699 "camlOcmml.33"
+   (extcall "caml_initialize" (+a "camlOcmml" 24) clos/699 ->unit))
+ (let parse''/439 "camlOcmml.32"
+   (extcall "caml_initialize" (+a "camlOcmml" 32) parse''/439 ->unit))
+ (let clos/709 "camlOcmml.31"
+   (extcall "caml_initialize" (+a "camlOcmml" 40) clos/709 ->unit))
+ (let clos/723 "camlOcmml.30"
+   (extcall "caml_initialize" (+a "camlOcmml" 48) clos/723 ->unit))
+ (extcall "caml_initialize" (+a "camlOcmml" 56) "camlOcmml.20" ->unit)
+ (let
+   flag/456
+     (app{bytes.ml:62,18-43} "camlStdlib__Bytes.copy_293" "camlOcmml.21" val)
+   (extcall "caml_initialize" (+a "camlOcmml" 64) flag/456 ->unit))
+ (let
+   *match*/692
+     (seq
+       (app{ocmml.ml:101,2-30} "camlStdlib.print_endline_369" "camlOcmml.22"
+         unit)
+       (let
+         (input/554
+            (let
+              (arg/728 "camlOcmml.29" arg/727 "camlOcmml.26"
+               arg/726 (load_mut val (+a "camlStdlib__Scanf" 912))
+               fun/731
+                 (app{scanf.ml:1485,20-50} "camlStdlib__Scanf.kscanf_1890"
+                   arg/726 (load_mut val (+a "camlStdlib__Scanf" 600))
+                   arg/727 val))
+              (app{ocmml.ml:102,14-66} (load_mut int fun/731) arg/728 fun/731
+                val))
+          input/641
+            (app{ocmml.ml:103,14-31} "camlStdlib__String.trim_455" input/554
+              val)
+          result/642
+            (try
+              (app{ocmml.ml:105,4-35} "camlOcmml.eq_276"
+                (let
+                  input/729
+                    (app{ocmml.ml:105,14-27} "camlOcmml.parse_448" input/641
+                      val)
+                  (app{ocmml.ml:32,18-33} "camlOcmml.check'_285" input/729 1
+                    val))
+                "camlOcmml.20" val)
+            with e/643 1))
+         (if (!= result/642 1)
+           (seq
+             (app{ocmml.ml:108,4-28} "camlStdlib.print_endline_369"
+               "camlOcmml.27" unit)
+             (let_mut h/644: val input/641
+               (let_mut _for/645: int 3
+                 (catch
+                   (if (> _for/645 10001) (exit 18)
+                     (catch rec (exit 19) with(19)
+                       (assign h/644
+                                 (app{ocmml.ml:111,13-29}
+                                   "camlStdlib__Digest.string_343" h/644 val))
+                       (let *id_prev*/747 _for/645
+                         (assign _for/645 (+ _for/645 2))
+                         (if (== *id_prev*/747 10001) (exit 18) []))
+                       (exit 19)))
+                 with(18) []))
+               (let_mut i/659: int 3
+                 (let
+                   bound/735
+                     (+
+                       (<<
+                         (let
+                           (str/733 (load_mut val (+a "camlOcmml" 64))
+                            tmp/734
+                              (-
+                                (<< (>>u (load_mut int (+a str/733 -8)) 10)
+                                  3)
+                                1))
+                           (- tmp/734
+                             (load_mut unsigned int8 (+a str/733 tmp/734))))
+                         1)
+                       1)
+                   (catch
+                     (if (> i/659 bound/735) (exit 16)
+                       (catch rec (exit 17) with(17)
+                         (if
+                           (==
+                             (+
+                               (<<
+                                 (let dividend/746 (>>s i/659 1)
+                                   (- dividend/746
+                                     (and
+                                       (+ dividend/746
+                                         (>>u (>>s dividend/746 3) 60))
+                                       -16)))
+                                 1)
+                               1)
+                             1)
+                           (assign h/644
+                                     (app{ocmml.ml:114,34-50}
+                                       "camlStdlib__Digest.string_343" h/644
+                                       val))
+                           [])
+                         (let
+                           (newval/742
+                              (>>s
+                                (app{ocmml.ml:115,29-126}
+                                  "camlStdlib__Char.chr_271"
+                                  (or
+                                    (xor
+                                      (<<
+                                        (let
+                                          (index/739 (>>s (+ i/659 -2) 1)
+                                           str/740
+                                             (load_mut val
+                                               (+a "camlOcmml" 64)))
+                                          (checkbound{ocmml.ml:115,41-61}
+                                            (let
+                                              tmp/741
+                                                (-
+                                                  (<<
+                                                    (>>u
+                                                      (load_mut int
+                                                        (+a str/740 -8))
+                                                      10)
+                                                    3)
+                                                  1)
+                                              (- tmp/741
+                                                (load_mut unsigned int8
+                                                  (+a str/740 tmp/741))))
+                                            index/739)
+                                          (load_mut unsigned int8
+                                            (+ str/740 index/739)))
+                                        1)
+                                      (<<
+                                        (let
+                                          index/737
+                                            (>>s
+                                              (<<
+                                                (let
+                                                  dividend/736
+                                                    (>>s (+ i/659 -2) 1)
+                                                  (- dividend/736
+                                                    (and
+                                                      (+ dividend/736
+                                                        (>>u
+                                                          (>>s dividend/736
+                                                            3)
+                                                          60))
+                                                      -16)))
+                                                1)
+                                              1)
+                                          (checkbound{ocmml.ml:115,82-110}
+                                            (let
+                                              tmp/738
+                                                (-
+                                                  (<<
+                                                    (>>u
+                                                      (load_mut int
+                                                        (+a h/644 -8))
+                                                      10)
+                                                    3)
+                                                  1)
+                                              (- tmp/738
+                                                (load_mut unsigned int8
+                                                  (+a h/644 tmp/738))))
+                                            index/737)
+                                          (load_mut unsigned int8
+                                            (+ h/644 index/737)))
+                                        1))
+                                    1)
+                                  val)
+                                1)
+                            index/743 (>>s (+ i/659 -2) 1)
+                            str/744 (load_mut val (+a "camlOcmml" 64)))
+                           (checkbound{ocmml.ml:115,8-126}
+                             (let
+                               tmp/745
+                                 (-
+                                   (<<
+                                     (>>u (load_mut int (+a str/744 -8)) 10)
+                                     3)
+                                   1)
+                               (- tmp/745
+                                 (load_mut unsigned int8
+                                   (+a str/744 tmp/745))))
+                             index/743)
+                           (store unsigned int8 (+ str/744 index/743)
+                             newval/742))
+                         (let *id_prev*/732 i/659 (assign i/659 (+ i/659 2))
+                           (if (== *id_prev*/732 bound/735) (exit 16) []))
+                         (exit 17)))
+                   with(16) [])))
+               (app{ocmml.ml:117,4-40} "camlStdlib.print_endline_369"
+                 (let b/730 (load_mut val (+a "camlOcmml" 64))
+                   (app{bytes.ml:61,35-43} "camlStdlib__Bytes.copy_293" b/730
+                     val))
+                 val)))
+           (app{ocmml.ml:118,9-31} "camlStdlib.print_endline_369"
+             "camlOcmml.28" val))))
+   [])
+ 1)
+
+(data)
